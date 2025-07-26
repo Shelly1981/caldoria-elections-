@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caldoria Elections Commission</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1a202c; /* text-gray-900 */
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #3b82f6; /* blue-500 */
+            border-radius: 9999px; /* rounded-full */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6; /* blue-500 */
+        }
+        .button-primary {
+            display: inline-block;
+            background-color: #3b82f6; /* blue-500 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button-primary:hover {
+            background-color: #2563eb; /* blue-600 */
+            transform: translateY(-2px);
+        }
+        .party-president-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 9999px; /* rounded-full */
+            border: 4px solid #3b82f6; /* blue-500 */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .table-header {
+            background-color: #e2e8f0; /* gray-200 */
+            color: #2d3748; /* gray-800 */
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 2px solid #cbd5e0; /* gray-300 */
+        }
+        .table-row-even {
+            background-color: #f7fafc; /* gray-50 */
+        }
+        .table-row-odd {
+            background-color: #ffffff;
+        }
+        .table-cell {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #edf2f7; /* gray-100 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <!-- Commission's Logo Placeholder -->
+                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-3">
+                    CEC
+                </div>
+                <h1 class="text-3xl font-bold text-gray-800">Caldoria Elections Commission</h1>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
+                <a href="#electoral-process" class="nav-link text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md">Electoral Process</a>
+                <a href="#political-parties" class="nav-link text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md">Political Parties</a>
+                <a href="#election-results" class="nav-link text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md">Election Results</a>
+                <a href="#contact-links" class="nav-link text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md">Contact & Links</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-8">
+
+        <!-- Electoral Process Section -->
+        <section id="electoral-process" class="card">
+            <h2 class="section-title">The Electoral Process in Caldoria</h2>
+            <div class="prose max-w-none text-gray-700 leading-relaxed">
+                <p>The Caldoria electoral process is designed to ensure a fair, transparent, and democratic selection of our national leaders. It involves several key stages, from voter registration to the final declaration of results.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">1. Voter Registration</h3>
+                <p>All eligible citizens of Caldoria aged 18 and above are encouraged to register to vote. Registration typically opens several months before an election and closes a few weeks prior to election day. This ensures that the voter roll is accurate and up-to-date.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">2. Candidate Nomination</h3>
+                <p>Political parties and independent candidates submit their nominations to the Elections Commission. Candidates must meet specific eligibility criteria, including age, citizenship, and residency requirements, and must not have any disqualifying convictions.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">3. Campaign Period</h3>
+                <p>Once nominations are finalized, candidates and parties engage in a campaign period, presenting their manifestos and policies to the public through rallies, media appearances, and community outreach. The Commission monitors campaigns to ensure adherence to electoral laws and fair practices.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">4. Election Day</h3>
+                <p>On election day, polling stations are open across all counties. Voters cast their ballots secretly at designated polling booths. The process is overseen by trained electoral officers and observed by party agents and independent monitors to ensure integrity.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">5. Vote Counting and Tabulation</h3>
+                <p>After polls close, votes are counted at each polling station, and results are transmitted to county tabulation centers. The county results are then forwarded to the National Tallying Center, where the final national results are compiled and verified by the Caldoria Elections Commission.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">6. Declaration of Results</h3>
+                <p>The Caldoria Elections Commission officially declares the election results, announcing the successful candidates and the distribution of seats. Any disputes or petitions regarding the election results are then handled by the appropriate legal bodies as per Caldoria's electoral laws.</p>
+            </div>
+        </section>
+
+        <!-- Political Parties Section -->
+        <section id="political-parties" class="card">
+            <h2 class="section-title">Political Parties and Their Presidents</h2>
+            <div id="parties-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Party information will be dynamically loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Election Results Section -->
+        <section id="election-results" class="card">
+            <h2 class="section-title">Latest Election Data</h2>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Total Votes by Party</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="min-w-full bg-white rounded-lg shadow-sm">
+                    <thead>
+                        <tr>
+                            <th class="table-header rounded-tl-lg">Party</th>
+                            <th class="table-header rounded-tr-lg">Total Votes Received</th>
+                        </tr>
+                    </thead>
+                    <tbody id="party-votes-table-body">
+                        <!-- Party vote data will be dynamically loaded here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Votes Cast by County</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg shadow-sm">
+                    <thead>
+                        <tr>
+                            <th class="table-header rounded-tl-lg">County</th>
+                            <th class="table-header rounded-tr-lg">Votes Cast</th>
+                        </tr>
+                    </thead>
+                    <tbody id="county-votes-table-body">
+                        <!-- County vote data will be dynamically loaded here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section id="contact-links" class="card">
+            <h2 class="section-title">Important Links and Contact</h2>
+            <div class="flex flex-col space-y-4">
+                <p class="text-lg text-gray-700">For inquiries, please contact the Caldoria Elections Commission:</p>
+                <a href="mailto:info@caldorianec.gov" class="button-primary w-fit">Email the Commission</a>
+                <a href="https://example.com/candidate-registration-form" target="_blank" class="button-primary w-fit">Candidate Registration Form</a>
+                <a href="https://example.com/past-election-data" target="_blank" class="button-primary w-fit">Past Election Data Results</a>
+                <p class="text-gray-600 text-sm mt-4">Note: The "Candidate Registration Form" and "Past Election Data Results" links are placeholders. In a real scenario, these would point to actual resources.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container text-center text-gray-400">
+            <p>&copy; 2025 Caldoria Elections Commission. All rights reserved.</p>
+            <p class="text-sm mt-2">Ensuring fair and transparent elections for a stronger Caldoria.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mock Data (simulating data from a spreadsheet)
+        const electionData = {
+            parties: [
+                {
+                    name: "Caldoria Progressive Alliance (CPA)",
+                    president: "Dr. Elena Petrova",
+                    picture: "https://placehold.co/120x120/a78bfa/ffffff?text=EP", // Placeholder image
+                    bio: "Dr. Elena Petrova is a renowned economist and advocate for social justice. She has dedicated her career to improving public education and healthcare in Caldoria. Under her leadership, the CPA focuses on sustainable development and equitable resource distribution."
+                },
+                {
+                    name: "National Democratic Front (NDF)",
+                    president: "Mr. Marcus Thorne",
+                    picture: "https://placehold.co/120x120/60a5fa/ffffff?text=MT", // Placeholder image
+                    bio: "Mr. Marcus Thorne, a seasoned politician and former Minister of Finance, leads the NDF with a vision for economic growth and national security. His platform emphasizes fiscal responsibility, private sector investment, and a strong defense."
+                },
+                {
+                    name: "United Citizens Party (UCP)",
+                    president: "Ms. Sofia Ramirez",
+                    picture: "https://placehold.co/120x120/fbbf24/ffffff?text=SR", // Placeholder image
+                    bio: "Ms. Sofia Ramirez is a dynamic community organizer and environmental activist. As president of the UCP, she champions green initiatives, citizen participation, and transparent governance. Her focus is on empowering local communities and protecting Caldoria's natural heritage."
+                }
+            ],
+            totalVotesByParty: [
+                { party: "Caldoria Progressive Alliance (CPA)", votes: 1523456 },
+                { party: "National Democratic Front (NDF)", votes: 1489765 },
+                { party: "United Citizens Party (UCP)", votes: 789123 }
+            ],
+            votesCastByCounty: [
+                { county: "Central Caldoria", votes: 850120 },
+                { county: "Eastern Highlands", votes: 620500 },
+                { county: "Coastal Plains", votes: 710980 },
+                { county: "Western Valleys", votes: 580744 },
+                { county: "Northern Districts", votes: 930000 }
+            ]
+        };
+
+        // Function to load political parties data
+        function loadPoliticalParties() {
+            const container = document.getElementById('parties-container');
+            if (!container) {
+                console.error("Parties container not found.");
+                return;
+            }
+            electionData.parties.forEach(party => {
+                const partyCard = document.createElement('div');
+                partyCard.className = 'card flex flex-col items-center text-center p-6';
+                partyCard.innerHTML = `
+                    <img src="${party.picture}" alt="Picture of ${party.president}" class="party-president-img mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">${party.president}</h3>
+                    <p class="text-lg font-medium text-blue-600 mb-3">${party.name}</p>
+                    <p class="text-gray-700 text-sm leading-relaxed">${party.bio}</p>
+                `;
+                container.appendChild(partyCard);
+            });
+        }
+
+        // Function to load election results data
+        function loadElectionResults() {
+            const partyVotesTableBody = document.getElementById('party-votes-table-body');
+            const countyVotesTableBody = document.getElementById('county-votes-table-body');
+
+            if (!partyVotesTableBody || !countyVotesTableBody) {
+                console.error("Election results table bodies not found.");
+                return;
+            }
+
+            // Populate Total Votes by Party table
+            electionData.totalVotesByParty.forEach((data, index) => {
+                const row = partyVotesTableBody.insertRow();
+                row.className = index % 2 === 0 ? 'table-row-even' : 'table-row-odd';
+                const partyCell = row.insertCell();
+                const votesCell = row.insertCell();
+                partyCell.className = 'table-cell';
+                votesCell.className = 'table-cell';
+                partyCell.textContent = data.party;
+                votesCell.textContent = data.votes.toLocaleString(); // Format with commas
+            });
+
+            // Populate Votes Cast by County table
+            electionData.votesCastByCounty.forEach((data, index) => {
+                const row = countyVotesTableBody.insertRow();
+                row.className = index % 2 === 0 ? 'table-row-even' : 'table-row-odd';
+                const countyCell = row.insertCell();
+                const votesCell = row.insertCell();
+                countyCell.className = 'table-cell';
+                votesCell.className = 'table-cell';
+                countyCell.textContent = data.county;
+                votesCell.textContent = data.votes.toLocaleString(); // Format with commas
+            });
+        }
+
+        // Load data when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPoliticalParties();
+            loadElectionResults();
+        });
+    </script>
+</body>
+</html>
